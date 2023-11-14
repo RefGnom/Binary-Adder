@@ -1,4 +1,4 @@
-﻿namespace BinaryAdder;
+﻿namespace BinaryAdder.LogicGates;
 
 internal class HalfAdder
 {

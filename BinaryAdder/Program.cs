@@ -4,23 +4,20 @@ internal class Program
 {
     private static void Main()
     {
-        var firstNumber = BinaryNumberReader.Read("Enter first number");
-        var secondNumber = BinaryNumberReader.Read("Enter second number");
-
-        var bitCount = int.Max(firstNumber.Length, secondNumber.Length);
-        var answer = new int[bitCount + 1];
-
-        var nextBit = 0;
-        for (int i = 0; i < bitCount + 1; i++)
+        var loop = new Loop();
+        loop.OnLoop += () =>
         {
-            var adder = new FullAdder();
-            adder.InputFromOtherAddder = nextBit;
-            adder.InputA = firstNumber[i];
-            adder.InputB = secondNumber[i];
-            answer[i] = adder.CurrentOutput;
-            nextBit = adder.NextOutput;
-        }
+            var firstToken = Reader.Read("Enter first number", x => int.TryParse(x, out _));
+            var secondToken = Reader.Read("Enter second number", x => int.TryParse(x, out _));
 
-        Console.WriteLine(string.Join("", answer.Reverse()));
+            var firstNumber = BinaryNumber.From10CC(firstToken);
+            var secondNumber = BinaryNumber.From10CC(secondToken);
+
+            var result = Adder.Add(firstNumber, secondNumber);
+
+            Console.WriteLine(result.ConvertTo10CC());
+        };
+
+        loop.Start();
     }
 }

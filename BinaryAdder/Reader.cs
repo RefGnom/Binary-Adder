@@ -1,25 +1,25 @@
 ﻿namespace BinaryAdder;
 
-internal static class BinaryNumberReader
+internal static class Reader
 {
-    public static BinaryNumber Read(string hint)
+    public static string Read(string hint, Func<string, bool> isValid)
     {
         if (!string.IsNullOrEmpty(hint))
         {
             Console.WriteLine(hint);
         }
-        return Read();
+        return Read(isValid);
     }
 
-    private static BinaryNumber Read()
+    private static string Read(Func<string, bool> isValid)
     {
         Console.Write(">>> ");
         var token = Console.ReadLine();
-        if (!BinaryNumber.IsCorrectInput(token))
+        if (!isValid(token))
         {
             Console.WriteLine($"Invalid value: {token}");
-            return Read();
+            return Read(isValid);
         }
-        return new BinaryNumber(token);
+        return token;
     }
 }
