@@ -31,7 +31,7 @@ internal class FullAdder
         }
     }
 
-    public int CurrentOutput => fromOtherAdder.InputA;
+    public int CurrentOutput => fromOtherAdder.OutputA;
     public int NextOutput => fromInputs.OutputB | fromOtherAdder.OutputB;
 
     public void Reset()

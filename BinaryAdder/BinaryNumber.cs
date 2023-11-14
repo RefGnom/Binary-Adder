@@ -27,11 +27,15 @@ internal class BinaryNumber
     {
         get
         {
-            if (IsCorrect && bit >= 0 && bit < Length)
+            if (!IsCorrect)
             {
-                return bits[bit];
+                throw new InvalidOperationException("number is invalid");
             }
-            return -1;
+            if (bit >= 0 && bit < Length)
+            {
+                return bits[^(bit + 1)];
+            }
+            return 0;
         }
     }
 
