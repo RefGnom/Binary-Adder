@@ -1,0 +1,14 @@
+D:\Programming\Projects\Binary-Adder\BinaryAdder\bin\Debug\net7.0\BinaryAdder.exe
+D:\Programming\Projects\Binary-Adder\BinaryAdder\bin\Debug\net7.0\BinaryAdder.deps.json
+D:\Programming\Projects\Binary-Adder\BinaryAdder\bin\Debug\net7.0\BinaryAdder.runtimeconfig.json
+D:\Programming\Projects\Binary-Adder\BinaryAdder\bin\Debug\net7.0\BinaryAdder.dll
+D:\Programming\Projects\Binary-Adder\BinaryAdder\bin\Debug\net7.0\BinaryAdder.pdb
+D:\Programming\Projects\Binary-Adder\BinaryAdder\obj\Debug\net7.0\BinaryAdder.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\Projects\Binary-Adder\BinaryAdder\obj\Debug\net7.0\BinaryAdder.AssemblyInfoInputs.cache
+D:\Programming\Projects\Binary-Adder\BinaryAdder\obj\Debug\net7.0\BinaryAdder.AssemblyInfo.cs
+D:\Programming\Projects\Binary-Adder\BinaryAdder\obj\Debug\net7.0\BinaryAdder.csproj.CoreCompileInputs.cache
+D:\Programming\Projects\Binary-Adder\BinaryAdder\obj\Debug\net7.0\BinaryAdder.dll
+D:\Programming\Projects\Binary-Adder\BinaryAdder\obj\Debug\net7.0\refint\BinaryAdder.dll
+D:\Programming\Projects\Binary-Adder\BinaryAdder\obj\Debug\net7.0\BinaryAdder.pdb
+D:\Programming\Projects\Binary-Adder\BinaryAdder\obj\Debug\net7.0\BinaryAdder.genruntimeconfig.cache
+D:\Programming\Projects\Binary-Adder\BinaryAdder\obj\Debug\net7.0\ref\BinaryAdder.dll
