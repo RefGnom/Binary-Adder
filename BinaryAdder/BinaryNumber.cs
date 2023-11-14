@@ -55,5 +55,26 @@ internal class BinaryNumber
         return true;
     }
 
+    public static BinaryNumber? From10CC(string value)
+    {
+        if (int.TryParse(value, out var number))
+        {
+            return From10CC(number);
+        }
+        return null;
+    }
+
+    public static BinaryNumber From10CC(int value)
+    {
+        var digits = new Stack<int>();
+        while (value > 0)
+        {
+            digits.Push(value & 1);
+            value >>= 1;
+        }
+        var numberIn2CC = string.Join("", digits);
+        return new BinaryNumber(numberIn2CC);
+    }
+
     public override string ToString() => StringValue;
 }
